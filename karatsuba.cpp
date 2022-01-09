@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 
 string remove_zeroes_from_front(string a){
     for(int i = 0; i < a.size(); i++){
