@@ -2,7 +2,7 @@
 using namespace std;
 #define endl '\n'
 
-string remove_zeroes_from_front(string a){
+string remove_zeros_from_front(string a){
     for(int i = 0; i < a.size(); i++){
         // if the digit isn't '0' then all of the numbers after it are returned
         if(a[i] != '0')
@@ -142,8 +142,8 @@ string karatsuba(string a, string b){
     // (Al*Bl*10^(n) + ((Al+Ar)*(Bl+Br)-Al*Bl-Ar*Br)*10^(n/2) + Ar*Br)
     string I_4 = str_add(I_3, str_add(I_1, I_2));
     
-    // return extra zeroes from the front and return result
-    return remove_zeroes_from_front(I_4);
+    // return extra zeros from the front and return result
+    return remove_zeros_from_front(I_4);
 }
 
 int32_t main(){
