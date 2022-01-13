@@ -37,7 +37,7 @@ void LargestSubsetWithCompositeSum(vector<int> a, int n){
                 break;
             }
         }
-        // if the sum is a prime number
+        // if the sum is a prime number then it must have an odd number
         assert(odd_found != -1);
         
         // print all elements except the one at index odd_found
@@ -52,7 +52,6 @@ void LargestSubsetWithCompositeSum(vector<int> a, int n){
     else{
         //print all elements
         cout << n << endl;
-        // print all elements
         for(int i = 0; i < n; i++){
             cout << a[i] << " ";
         }
