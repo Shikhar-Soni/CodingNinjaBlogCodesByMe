@@ -15,8 +15,8 @@ bool isPrime(int x){
 void LargestSubsetWithCompositeSum(vector<int> a, int n){
     // sum of the elements in the vector
     int sum_of_elements = 0;
-    for(int x: a){
-        sum_of_elements += x;
+    for(int i = 0; i < n; i++){
+        sum_of_elements += a[i];
     }
     
     //edge case when sum <= 2
