@@ -25,7 +25,7 @@ int CountInversions(vector<int> a, int n){
     int mx = *max_element(a.begin(), a.end());
     vector<int> BIT(mx + 2, 0);
     int inv_count = 0;
-    for(int i = 0; i < 5; i++){
+    for(int i = 0; i < n; i++){
         // increasing index a[i] by 1
         add(BIT, a[i], 1);
         // count of numbers greater than a[i] before it
