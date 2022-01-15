@@ -2,6 +2,7 @@
 using namespace std;
 #define endl '\n'
 
+// required functions for fenwick tree, learn more about how these work through the shared links
 void add(vector<int>& BIT, int idx, int val){
     idx += 1;
     while(idx < BIT.size()){
