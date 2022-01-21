@@ -86,7 +86,7 @@ class SuffixTreeBruteForce:
                         # string ends in the middle of label
                         return True
                     elif(s[k] == label[k-i]):
-                        # we keep checking for matching character in suffix with node label
+                        # we keep checking for matching character with node label
                         k += 1
                     else:
                         # mismatch
