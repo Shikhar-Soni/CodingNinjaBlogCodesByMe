@@ -97,10 +97,9 @@ class SuffixTreeBruteForce:
                 return False
         return True
 
-s = 'aba nscbl vhal'
+s = 'auvha jufuvh fuouhkv ovnshdck vhacakd falhvb'
+print(s)
 p = SuffixTreeBruteForce(s)
-for i in range(len(s)):
-    for j in range(i, len(s)):
-        sub = s[i:j+1]
-        print(sub)
-        assert(p.findSubstring(sub))
+print(p.findSubstring('vha'))
+print(p.findSubstring('fuouhkv ovnsdck'))
+print(p.findSubstring(' falhvb'))
