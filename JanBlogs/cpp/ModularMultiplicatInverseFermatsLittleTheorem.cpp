@@ -17,7 +17,11 @@ int modular_exponentiation(int a, int b, int MOD = 1e9 + 7){
     return ans;
 }
 
+int modular_multiplicative_inverse(int a, int m){
+    return modular_exponentiation(a, m-2, m);
+}
+
 int32_t main(){
-    int a = 2, b = 10, MOD = 499;
-    cout << modular_exponentiation(a, b, MOD);
+    int a = 10, MOD = 499;
+    cout << modular_multiplicative_inverse(a, MOD);
 }
